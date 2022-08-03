@@ -14,6 +14,7 @@ const Header = () => {
         </span>
         <button>
           <ShoppingCart weight="fill" />
+          <span>0</span>
         </button>
       </HeaderMenu>
     </HeaderContainer>

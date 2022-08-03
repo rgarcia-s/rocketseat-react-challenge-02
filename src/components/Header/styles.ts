@@ -55,5 +55,30 @@ export const HeaderMenu = styled.div`
       height: 1.375rem;
       color: ${(props) => props.theme['yellow-dark']};
     }
+
+    position: relative;
+
+    span {
+      position: absolute;
+      height: 1.25rem;
+      width: 1.25rem;
+      top: -0.625rem;
+      right: -0.625rem;
+
+      padding: 0;
+
+      border-radius: 1000px;
+
+      background-color: ${(props) => props.theme['yellow-dark']};
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 0.75rem;
+      font-weight: 700;
+      line-height: 1;
+      color: ${(props) => props.theme.white};
+    }
   }
 `
