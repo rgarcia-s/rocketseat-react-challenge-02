@@ -7,7 +7,7 @@ export const HeaderContainer = styled.header`
 
   max-width: 90rem;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 2rem 10rem;
 `
 export const HeaderMenu = styled.div`
   display: flex;
