@@ -13,8 +13,6 @@ export const MainInfoContainer = styled.div`
   gap: 3.5rem;
 
   h1 {
-    font-family: 'Baloo 2', sans-serif;
-    font-weight: 800;
     font-size: 3rem;
     line-height: 1.3;
     color: ${(props) => props.theme['base-title']};
@@ -81,4 +79,24 @@ export const Icon = styled.div<IconProps>`
 
     width: 1rem;
   }
+`
+
+export const ContentContainer = styled.div`
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 2rem 10rem;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 3.25rem;
+  }
+`
+
+export const CoffeeList = styled.div`
+  display: flex;
+
+  flex-wrap: wrap;
+
+  column-gap: 2rem;
+  row-gap: 2.5rem;
 `

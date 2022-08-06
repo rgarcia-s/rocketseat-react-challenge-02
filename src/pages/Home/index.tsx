@@ -1,8 +1,15 @@
 import { Header } from '../../components/Header'
-import { Icon, InfoContentContainer, MainInfoContainer } from './styled'
+import {
+  CoffeeList,
+  ContentContainer,
+  Icon,
+  InfoContentContainer,
+  MainInfoContainer,
+} from './styled'
 
 import mainInfoImage from '../../assets/main-info-image.svg'
 import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
+import { CoffeeListItem } from './components/CoffeeListItem'
 
 const Home = () => {
   return (
@@ -46,6 +53,22 @@ const Home = () => {
           <img src={mainInfoImage} alt="" />
         </div>
       </MainInfoContainer>
+      <ContentContainer>
+        <h2>Nossos cafés</h2>
+
+        <CoffeeList>
+          <CoffeeListItem />
+          <CoffeeListItem />
+          <CoffeeListItem />
+          <CoffeeListItem />
+          <CoffeeListItem />
+          <CoffeeListItem />
+          <CoffeeListItem />
+          <CoffeeListItem />
+          <CoffeeListItem />
+          <CoffeeListItem />
+        </CoffeeList>
+      </ContentContainer>
     </>
   )
 }
