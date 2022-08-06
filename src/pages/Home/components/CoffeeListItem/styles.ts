@@ -20,6 +20,16 @@ export const Container = styled.div`
     margin: -2.5rem 0 0.75rem;
   }
 
+  div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 0.25rem;
+
+    margin-bottom: 1rem;
+  }
+
   span {
     background: ${(props) => props.theme['yellow-light']};
     color: ${(props) => props.theme['yellow-dark']};
@@ -31,8 +41,6 @@ export const Container = styled.div`
 
     padding: 0.25rem 0.5rem;
     border-radius: 100px;
-
-    margin-bottom: 1rem;
   }
 
   h3 {

@@ -31,11 +31,17 @@ const CoffeeListItem = () => {
     })
   }
 
+  const tiposCafe = ['Especial', 'Alcóolico', 'Gelado']
+
   return (
     <Container>
       <img src={expressoSVG} alt="Café expresso" />
 
-      <span>Tradicional</span>
+      <div>
+        {tiposCafe.map((tipo) => (
+          <span key={tipo}>{tipo}</span>
+        ))}
+      </div>
 
       <h3>Expresso Tradicional</h3>
 
