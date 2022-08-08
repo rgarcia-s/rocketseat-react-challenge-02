@@ -113,6 +113,12 @@ export const ChangeAmountButton = styled.button`
 
   font-size: 1.25rem;
 
+  cursor: pointer;
+
+  &:hover {
+    color: ${(props) => props.theme['purple-dark']};
+  }
+
   &:focus {
     position: relative;
   }
@@ -139,6 +145,14 @@ export const AddToCartButton = styled.button`
   padding: 0.5rem;
 
   background: ${(props) => props.theme['purple-dark']};
+
+  transition: background 0.3s;
+
+  cursor: pointer;
+
+  &:hover {
+    background: ${(props) => props.theme.purple};
+  }
 
   svg {
     color: ${(props) => props.theme['base-card']};
